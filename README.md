@@ -53,4 +53,15 @@ Modules:
         pre-condition: value of columns for a specified stock is negative (value < 0)
         1.6.3 value of column for a specified stock is less than SPY/QQQ value of the same colmnn -> display dark red color
         1.6.4 value of column for a specified stock is more than SPY/QQQ value of the same column -> display light red color
+        1.6.5 columns that need to use the algorithm above: short_term_ema, medium_term_ema, long_term_ema, daily_change, weekly_change, monthly_change, close_over_short, short_over_medium, medium_over_long
         
+        Business logics details: (compare apple with S&P 500)
+        1. we get the specified columns values of S&P 500 from spy_infomration,
+        2. we get the same clumns values of Apple from aapl_information.
+        3.1 compare the vlaues of column with 0, if > 0 green, if less than 0 red.
+        3.2 compare the values of the columns with same columns values of spy, if > spy values -> light if < spy values -> dark color
+        Result:
+        light green -> value is more than spy and positive.
+        dark green -> value is less than spy but positive
+        light red -> value is more than spy but negative
+        dark red -> value is less than spy and negative
