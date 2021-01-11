@@ -35,18 +35,21 @@ class moving_average_price_generator:
         stock_to_run = sys.argv[1]
         start_date = sys.argv[2]
         end_date = sys.argv[3]
-        days_look_back = int(sys.argv[4])
-        output_csv_file = sys.argv[5]
+        # days_look_back = int(sys.argv[4])
+        # output_csv_file = sys.argv[5]
 
         stock_array = stock_to_run.split(',')
 
         for stock in stock_array:
             input_df = web.DataReader(stock, data_source='yahoo', start=start_date, end=end_date)
-            add_date_column(input_df)
+            print(stock)
+            print(input_df)
 
-            calculate_input_days_simple_moving_average(input_df, days_look_back, 'SMA')
-            calculate_input_days_exponential_moving_average(input_df, days_look_back, 'EMA')
-            input_df = clear_nan_rows(input_df)
-
-            plot_trend(input_df, stock)
-            input_df.to_csv(output_csv_file, index=False, header=True)
+            # add_date_column(input_df)
+            #
+            # calculate_input_days_simple_moving_average(input_df, days_look_back, 'SMA')
+            # calculate_input_days_exponential_moving_average(input_df, days_look_back, 'EMA')
+            # input_df = clear_nan_rows(input_df)
+            #
+            # plot_trend(input_df, stock)
+            # input_df.to_csv(output_csv_file, index=False, header=True)

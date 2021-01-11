@@ -1,0 +1,105 @@
+Symbol,Name,Sector
+QQQ,Nasdaq 100,Index
+AAPL,Apple Inc,Information Technology
+ADBE,Adobe Systems Inc,Information Technology
+ADI,Analog Devices,Information Technology
+ADP,Automatic Data Procs,Information Technology
+ADSK,Autodesk Inc,Information Technology
+ALGN,Align Technology,Health Care
+ALXN,Alexion Pharm Inc,Health Care
+AMAT,Applied Materials,Information Technology
+AMD,Adv Micro Devices,Information Technology
+AMGN,Amgen Inc,Health Care
+AMZN,Amazon.com Inc.,Consumer Discretionary
+ANSS,Ansys Inc.,Information Technology
+ASML,Asml Hld NY Reg,Information Technology
+ATVI,Activision Blizzard,Information Technology
+AVGO,Broadcom Ltd,Information Technology
+BIDU,Baidu Inc,Information Technology
+BIIB,Biogen Inc.,Health Care
+BKNG,Booking Holdings Inc.,Consumer Discretionary
+BMRN,Biomarin Pharmaceuticals,Health Care
+CDNS,Cadence Design Sys,Information Technology
+CDW,CDW Corp,Information Technology
+CERN,Cerner Corp,Health Care
+CHKP,Check Point Software,Information Technology
+CHTR,Charter Communicatio,Consumer Discretionary
+CMCSA,Comcast Corp A,Consumer Discretionary
+COST,Costco Wholesale,Consumer Staples
+CPRT,Copart Inc,Industrials
+CSCO,Cisco Systems Inc,Information Technology
+CSX,CSX Corp,Industrials
+CTAS,Cintas Corp,Industrials
+CTSH,Cognizant Tech Sol,Information Technology
+CTXS,Citrix Systems Inc.,Information Technology
+DLTR,Dollar Tree Inc.,Consumer Discretionary
+DOCU,Docusign Inc,Information Technology
+DXCM,Dexcom,Health Care
+EA,Electronic Arts Inc.,Information Technology
+EBAY,Ebay Inc,Information Technology
+EXC,Exelon Corp,Utilities
+EXPE,Expedia Group Inc,Consumer Discretionary
+FAST,Fastenal Company,Industrials
+FB,Facebook Inc,Information Technology
+FISV,Fiserv Inc,Information Technology
+FOX,Fox Corp Cl B,Consumer Discretionary
+FOXA,Fox Corp Cl A,Consumer Discretionary
+GILD,Gilead Sciences Inc,Health Care
+GOOG,Alphabet Cl C,Information Technology
+GOOGL,Alphabet Cl A,Information Technology
+IDXX,Idexx Laboratories,Health Care
+ILMN,Illumina Inc,Health Care
+INCY,Incyte Corp,Health Care
+INTC,Intel Corp,Information Technology
+INTU,Intuit Inc,Information Technology
+ISRG,Intuitive Surg Inc,Health Care
+JD,Jd.com Inc Ads,Consumer Discretionary
+KDP,Keurig Dr Pepper Inc,Consumer Staples
+KHC,Kraft Heinz Company,Consumer Staples
+KLAC,K L A-Tencor Corp,Information Technology
+LBTYA,Liberty Global Ord A,Telecommunication Services
+LBTYK,Liberty Global Ord C,Telecommunication Services
+LRCX,Lam Research Corp,Information Technology
+LULU,Lululemon Athletica,Consumer Discretionary
+MAR,Marriot Int Cl A,Consumer Discretionary
+MCHP,Microchip Technology,Information Technology
+MDLZ,Mondelez Intl Inc,Consumer Staples
+MELI,Mercadolibre Inc,Consumer Discretionary
+MNST,Monster Beverage Cp,Consumer Staples
+MRNA,Moderna Inc,Health Care
+MSFT,Microsoft Corp,Information Technology
+MU,Micron Technology,Information Technology
+MXIM,Maxim Integrated,Information Technology
+NFLX,Netflix Inc,Information Technology
+NTES,Netease Inc Ads,Telecommunication Services
+NVDA,Nvidia Corp,Information Technology
+NXPI,Nxp Semiconductors,Information Technology
+ORLY,O'Reilly Automotive,Consumer Discretionary
+PAYX,Paychex Inc,Information Technology
+PCAR,Paccar Inc,Industrials
+PDD,Pinduoduo Inc ADR,Consumer Discretionary
+PEP,Pepsico Inc,Consumer Staples
+PYPL,Paypal Holdings,Information Technology
+QCOM,Qualcomm Inc,Information Technology
+REGN,Regeneron Pharmaceuticals,Health Care
+ROST,Ross Stores Inc,Consumer Discretionary
+SBUX,Starbucks Corp,Consumer Discretionary
+SGEN,Seattle Genetics Inc,Health Care
+SIRI,Sirius XM Holdings,Telecommunication Services
+SNPS,Synopsys Inc,Information Technology
+SPLK,Splunk Inc,Information Technology
+SWKS,Skyworks Solutions,Information Technology
+TCOM,Trip.com Group Ltd,Consumer Discretionary
+TMUS,T-Mobile US,Telecommunication Services
+TSLA,Tesla Inc,Consumer Discretionary
+TTWO,Take-Two Interacti,Information Technology
+TXN,Texas Instruments,Information Technology
+ULTA,Ulta Beauty Inc,Consumer Discretionary
+VRSK,Verisk Analytics Inc,Industrials
+VRSN,Verisign Inc,Information Technology
+VRTX,Vertex Pharmaceutic,Health Care
+WBA,Walgreens Boots Alliance,Consumer Staples
+WDAY,Workday Inc,Information Technology
+XEL,XCEL Energy Inc,Utilities
+XLNX,Xilinx Inc,Information Technology
+ZM,Zoom Video Communications Cl A,Information Technology
