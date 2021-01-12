@@ -76,23 +76,28 @@ function setup_new_stock_environment(){
 }
 
 # End of definition of functions
-echo "Step 1.1 -> Setting up database environment for list of SP500 stocks"
-setup_sp500_environment $SPY_STOCK_LIST_DIR
-echo "Finished setting up database environment for list of SP500 stocks"
 
-
-echo "Step 1.2 -> Setting up database environment for list of NASDAQ stocks"
-setup_nasdaq100_environment $NASDAQ_STOCK_LIST_DIR
-echo "Finished setting up database environment for list of NASDAQ stocks"
-
-
-echo "Step 2 -> Setting up database environment for all the input stocks if not exist"
+# Fetch stocks to run.
 IFS=',' read -r -a stocks_array <<< "$STOCKS_TO_RUN"
-for stock in "${stocks_array[@]}"
-do
-    setup_new_stock_environment $stock
-done
-echo "Finished setting up database environment for all the input stocks if not exist"
+
+if [[ $IS_DAILY_RUN == "FALSE" ]]; then
+    echo "Step 1.1 -> Setting up database environment for list of SP500 stocks"
+    setup_sp500_environment $SPY_STOCK_LIST_DIR
+    echo "Finished setting up database environment for list of SP500 stocks"
+
+
+    echo "Step 1.2 -> Setting up database environment for list of NASDAQ stocks"
+    setup_nasdaq100_environment $NASDAQ_STOCK_LIST_DIR
+    echo "Finished setting up database environment for list of NASDAQ stocks"
+
+
+    echo "Step 2 -> Setting up database environment for all the input stocks if not exist"
+    for stock in "${stocks_array[@]}"
+    do
+        setup_new_stock_environment $stock
+    done
+    echo "Finished setting up database environment for all the input stocks if not exist"
+fi
 
 
 echo "Step 3 -> Trigger calculating nine_one_rule for all the input stocks"
