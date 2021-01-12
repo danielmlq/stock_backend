@@ -77,31 +77,28 @@ function setup_new_stock_environment(){
 
 # End of definition of functions
 
-# Fetch stocks to run.
+echo "Step 1.1 -> Setting up database environment for list of SP500 stocks"
+setup_sp500_environment $SPY_STOCK_LIST_DIR
+echo "Finished setting up database environment for list of SP500 stocks"
+
+
+echo "Step 1.2 -> Setting up database environment for list of NASDAQ stocks"
+setup_nasdaq100_environment $NASDAQ_STOCK_LIST_DIR
+echo "Finished setting up database environment for list of NASDAQ stocks"
+
+
+echo "Step 2 -> Setting up database environment for all the input stocks if not exist"
 IFS=',' read -r -a stocks_array <<< "$STOCKS_TO_RUN"
-
-if [[ $IS_DAILY_RUN == "FALSE" ]]; then
-    echo "Step 1.1 -> Setting up database environment for list of SP500 stocks"
-    setup_sp500_environment $SPY_STOCK_LIST_DIR
-    echo "Finished setting up database environment for list of SP500 stocks"
-
-
-    echo "Step 1.2 -> Setting up database environment for list of NASDAQ stocks"
-    setup_nasdaq100_environment $NASDAQ_STOCK_LIST_DIR
-    echo "Finished setting up database environment for list of NASDAQ stocks"
-
-
-    echo "Step 2 -> Setting up database environment for all the input stocks if not exist"
-    for stock in "${stocks_array[@]}"
-    do
-        setup_new_stock_environment $stock
-    done
-    echo "Finished setting up database environment for all the input stocks if not exist"
-fi
+for stock in "${stocks_array[@]}"
+do
+    setup_new_stock_environment $stock
+done
+echo "Finished setting up database environment for all the input stocks if not exist"
 
 
 echo "Step 3 -> Trigger calculating nine_one_rule for all the input stocks"
-python3 $NINE_ONE_RULE_MODEL_PYTHON_DIR $config_file '1990-01-01' '2021-12-11' $NINE_ONE_RULE_STOCK_OUTPUT_DIR
+today_date=`date +"%Y-%0m-%d"`
+python3 $NINE_ONE_RULE_MODEL_PYTHON_DIR $config_file '1990-01-01' $today_date $NINE_ONE_RULE_STOCK_OUTPUT_DIR
 echo "Finished running nine_one_rule for all the input stocks"
 
 
